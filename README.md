@@ -1,5 +1,6 @@
 # Open the IPL Probaility Predictor folder on your VS Code, then open app.py file and write 'streamlit run app.py' on your terminal. You will be directed to new page where the IPL Pribability predictor will be working.
 # It takes input as batting & balling team, match avenue, balls left, wickets left and target, then predicts the propbabilty of winning of each team.
+# I have trained Logistic regression model on Jupyter notebook then extracted the trained model using pipe.pkl and used ro make the Probability predictor using streamlit.
 
 # Code:
 
