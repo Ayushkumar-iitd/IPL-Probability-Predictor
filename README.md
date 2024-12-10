@@ -1,7 +1,7 @@
-Open the IPL Probaility Predictor folder on your VS Code, then open app.py file and write 'streamlit run app.py' on your terminal. You will be directed to new page where the IPL Pribability predictor will be working.
-It takes input as batting & balling team, match avenue, balls left, wickets left and target, then predicts the propbabilty of winning of each team.
+# Open the IPL Probaility Predictor folder on your VS Code, then open app.py file and write 'streamlit run app.py' on your terminal. You will be directed to new page where the IPL Pribability predictor will be working.
+# It takes input as batting & balling team, match avenue, balls left, wickets left and target, then predicts the propbabilty of winning of each team.
 
-Code:
+# Code:
 
 import streamlit as st
 import pickle
@@ -25,7 +25,7 @@ cities = [
 pipe = pickle.load(open('pipe.pkl', 'rb'))
 st.title('IPL Win Predictor')
 
-# Use st.columns instead of st.beta_columns
+
 col1, col2 = st.columns(2)
 
 with col1:
@@ -37,7 +37,7 @@ selected_city = st.selectbox('Select host city', sorted(cities))
 
 target = st.number_input('Target')
 
-# Use st.columns instead of st.beta_columns for additional columns
+
 col3, col4, col5 = st.columns(3)
 
 with col3:
