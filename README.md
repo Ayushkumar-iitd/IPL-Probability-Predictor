@@ -1,3 +1,8 @@
+Open the IPL Probaility Predictor folder on your VS Code, then open app.py file and write 'streamlit run app.py' on your terminal. You will be directed to new page where the IPL Pribability predictor will be working.
+It takes input as batting & balling team, match avenue, balls left, wickets left and target, then predicts the propbabilty of winning of each team.
+
+Code:
+
 import streamlit as st
 import pickle
 import pandas as pd
@@ -66,5 +71,4 @@ if st.button('Predict Probability'):
     win = result[0][1]
     st.header(f"{batting_team} - {round(win * 100)}%")
     st.header(f"{bowling_team} - {round(loss * 100)}%")
-
 
